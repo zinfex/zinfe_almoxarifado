@@ -1,0 +1,62 @@
+.container-login {
+    background-color: #0E1015;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.inputs-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.input-login {
+    margin-left: 34%;
+    width: 30%;
+    height: 40px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.buttons-login button {
+    margin: 10px;
+    width: 170px;
+    padding: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 50px;
+    transition: ease-in-out 200ms;
+    border-radius: 20px;
+}
+
+.buttons-login button:hover {
+    background-color: #0095FF;
+    color: white;
+    border-radius: 0;
+}
+
+.img-container {
+    height: 438px;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/505102d6e4b0d25dcc625b57/1589064345244-GJW28SAEB3OAUIJOLMCM/image-asset.jpeg");
+    background-position: top;
+}
+
+.img-container h1{
+    margin-top: 130px;
+    font-size: 70px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+}
+
+.titulo-login {
+    margin-top: 30px;
+    color: #0095FF;
+}

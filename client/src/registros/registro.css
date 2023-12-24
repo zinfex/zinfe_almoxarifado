@@ -1,0 +1,72 @@
+.pag {
+    display: flex;
+}
+
+.container-register h1 {
+    color: #0095FF;
+}
+
+.container-register {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 50px;
+}
+
+.container-register input {
+    padding: 15px;
+    margin: 10px 0px 10px 0px;
+    width: 30%;
+    border-radius: 7px;
+    font-size: 20px;
+    background-color: rgba(139, 145, 156, 0.17);
+    border: 0px;
+    color: white;
+}
+
+.container-register button {
+    padding: 15px;
+    width: fit-content;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: 100ms ease-in-out; 
+    background-color: #0095FF;
+    color: white;
+    transition: 200ms ease-in-out;
+}
+
+.container-register button:hover {
+    background-color: #00bfff;
+}
+
+.container-register a {
+    width: fit-content;
+    margin-top: 40px;
+    color: white;
+}
+
+.tables {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    height: fit-content;
+}
+
+.tables div {
+    background-color: rgba(35, 35, 155, 0.081);
+    color: rgb(83, 172, 236);
+    font-size: 20px;
+    
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tables h2 {
+    color: rgba(255, 255, 255, 0.786);
+}
+
+input.searchBox{
+    width: 100%;
+}
