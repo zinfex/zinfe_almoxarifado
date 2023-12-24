@@ -15,6 +15,13 @@ function Caixa() {
     });
   }, []);
 
+  function formatarMoeda(valor) {
+    return valor.toLocaleString('pt-BR', {
+      style: 'currency',
+      currency: 'BRL'
+    })
+  }
+
   return (
     <div>
       <Header />
@@ -45,7 +52,7 @@ function Caixa() {
 
                     return (
                       <tr>
-                        <td>R${values.cost}</td>
+                        <td>{formatarMoeda(values.cost)}</td>
                         <td>id: {values.cliente_id}</td>
                         <td>id: {values.produto_id}</td>
                         <td>{dataFormatada}</td>

@@ -56,6 +56,13 @@ function RegistroVenda() {
     });
   }, []);
 
+  function formatarMoeda(valor) {
+    return valor.toLocaleString('pt-BR', {
+      style: 'currency',
+      currency: 'BRL'
+    })
+  }
+
   return (
     <div>
       <Header />
@@ -137,7 +144,7 @@ function RegistroVenda() {
                   if (values.amount > 0) {
                     return (
                       <p key={values.name}>
-                        ID: {values.id} - {values.name} - R${values.cost} - (
+                        ID: {values.id} - {values.name} - {formatarMoeda(values.cost)} - (
                         {values.amount})
                       </p>
                     );
