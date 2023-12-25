@@ -8,13 +8,24 @@ import Column from "../components/Column";
 
 function Caixa() {
   const [listVendas, setListVendas] = useState();
+  const [listClientes, setListClientes] = useState()
 
+  const [listTot, setListTots] = useState()
+  
   useEffect(() => {
     Api.get("vendas").then((res) => {
       setListVendas(res.data);
     });
-  }, []);
 
+    Api.get("clientes").then((res) => {
+      setListClientes(res.data)
+    })
+
+    setListTots([listVendas, listClientes])
+  }, []);
+  console.log(listTot)
+
+  
   function formatarMoeda(valor) {
     return valor.toLocaleString('pt-BR', {
       style: 'currency',

@@ -4,15 +4,15 @@ button.cadastrar{
     font-size: 20px;
     padding: 15px;
     cursor: pointer;
-    background-color: rgb(83, 172, 236);
+    background-color: #1D0C3C;
     color: white ;
     border-radius: 5px;
     border: 0;
-    transition: 300ms ease-in-out;
+    transition: 200ms ease-in-out;
 }
 
 button:hover {
-    background-color: rgb(123, 191, 239);
+    background-color: #1d0c3cc4;
 }
 
 .back {
@@ -24,14 +24,14 @@ button:hover {
 }
 
 .relatorys{
-    color: white;
+    color: #1D0C3C;
     font-size: 20px;
     padding: 30px;
-    border: 1px solid rgb(37, 37, 37);
 }
 
 .relatorys table tr td{
-    color: rgb(83, 172, 236);
+    color: #1D0C3C;
     padding: 10px 40px;
-    border: 1px solid rgb(37, 37, 37);
+    background-color: rgba(0, 0, 0, 0.205);
+
 }

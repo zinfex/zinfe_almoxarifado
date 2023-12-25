@@ -2,52 +2,52 @@
     display: flex;
 }
 
-.container-register h1 {
-    color: #0095FF;
+.container-register h1, .container-register-vendas h1 {
+    color: #1D0C3C;
 }
 
-.container-register {
+.container-register, .container-register-vendas {
     display: flex;
     flex-direction: column;
-    width: 100%;
     margin: 20px 50px;
 }
 
 .container-register input {
     padding: 15px;
     margin: 10px 0px 10px 0px;
-    width: 30%;
+    width: 100%;
     border-radius: 7px;
     font-size: 20px;
     background-color: rgba(139, 145, 156, 0.17);
     border: 0px;
-    color: white;
+    color: #1D0C3C;
 }
 
-.container-register button {
+.container-register button, .container-register-vendas button {
     padding: 15px;
-    width: fit-content;
+    width: 100%;
     cursor: pointer;
     border-radius: 7px;
+    font-family: 'Roboto', sans-serif;
     transition: 100ms ease-in-out; 
-    background-color: #0095FF;
+    background-color: #1D0C3C;
     color: white;
     transition: 200ms ease-in-out;
 }
 
-.container-register button:hover {
-    background-color: #00bfff;
+.container-register button:hover, .container-register-vendas button:hover {
+    background-color: #1d0c3cda;
 }
 
-.container-register a {
+.container-register a, .container-register-vendas a {
     width: fit-content;
     margin-top: 40px;
     color: white;
 }
 
+/*REGISTRO VENDA*/
 .tables {
     margin-top: 100px;
-    width: 100%;
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
@@ -56,17 +56,35 @@
 
 .tables div {
     background-color: rgba(35, 35, 155, 0.081);
-    color: rgb(83, 172, 236);
+    color: #1D0C3C;
     font-size: 20px;
-    
     padding: 20px;
-    border-radius: 10px;
+    
 }
 
 .tables h2 {
-    color: rgba(255, 255, 255, 0.786);
+    color: #1D0C3C;
 }
 
-input.searchBox{
-    width: 100%;
+.container-register-vendas input.searchBox{
+    width: 80%;
+}
+
+.container-register-vendas input {
+    padding: 15px;
+    margin: 10px 0px 10px 0px;
+    width: 30%;
+    border-radius: 7px;
+    font-size: 20px;
+    background-color: rgba(139, 145, 156, 0.17);
+    border: 0px;
+    color: #1D0C3C;
+}
+
+.linkCadastro {
+    color: #1D0C3C;
+}
+
+.linkCadastro:hover {
+    color: blue;
 }

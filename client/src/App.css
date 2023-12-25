@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Rubik&display=swap');
 
 * {
     margin: 0px;
@@ -9,12 +8,12 @@
 body {
     height: 100vh;
     font-family: 'Rubik', sans-serif;
-    background-color: #0E1015;
+    background-color: #F5F5F5;
     color: rgb(207, 206, 206);
 }
 
 header h1  {
-    color: #0095FF;
+    color: #ffffff;
 }
 
 a {
@@ -23,39 +22,40 @@ a {
 }
 
 .column button{
-    font-size: 15px;
+    font-size: 18px;
     display: flex;
-    width:200px;
+    width:100%;
     text-decoration: none;
-    padding: 15px;
+    padding: 10px;
     text-align: start;
     cursor: pointer;
     margin-top: 15px;
     transition: 400ms ease-in-out;
     background-color: rgba(6, 6, 22, 0);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     border-radius: 30px;
     border: 0px;
-    color: #0095FF;
+    color: #ffffff;
 }
 
 .column button:hover {
     background-color: rgba(255, 255, 255, 0.653);
     border-radius: 5px;
-    color: black;
+    color: #1D0C3D;
 }
 
 .column {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(231, 231, 231, 0.092);
     padding: 15px;
+    background-color: #1D0C3D;
+    width: fit-content;
+    min-height: 90vh;
 }
 
 .container {
     display: flex;
     height: fit-content;
-    border: 1px solid rgba(231, 231, 231, 0.092);
 }
 
 header {
@@ -66,6 +66,7 @@ header {
     display: flex;
     border: 1px solid rgba(231, 231, 231, 0.092);
     justify-content: center;
+    background-color: #1D0C3D;
 }
 
 .header-forms {
@@ -83,7 +84,7 @@ header {
     margin-inline-end: 30px;
     text-decoration: none;
     transition: 150ms ease-in-out;
-    color: #0095FF;
+    color: #ffffff;
 }
 
 
@@ -95,6 +96,7 @@ header {
 .tabelas {
     display: flex;
     margin: 20px;
+    color: #1D0C3D;
 }
 .tabela {
     margin-inline: 50px;
@@ -104,10 +106,10 @@ header {
 .box-info {
     display: flex;
     margin-top: 10px;
-    background-color: #13151B;
+    background-color: #1D0C3D;
     color: white;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     justify-content:space-between;
 }
 
@@ -119,17 +121,6 @@ header {
 }
 .box-info button:hover {
     background-color: rgb(58, 111, 149);
-}
-
-.back {
-    color: black;
-    width: fit-content;
-    font-size: 40px;
-    transition: 150ms ease-in-out;
-}
-
-.back:hover{
-    transform: scale(1.2);
 }
 
 @media (max-width: 800px) {

@@ -8,7 +8,7 @@ import { IoMdSettings } from "react-icons/io";
 function Column() {
     return (
         <div className="column">
-            <Link to='/'><button><MdOutlineGridView />   Visualizar</button></Link>
+            <Link to='/'><button><MdOutlineGridView />   Dashboard</button></Link>
             <Link to='/caixa'><button><FaCashRegister />   Caixa</button></Link>
             <Link to='/cadastrarproduto'><button><FaBox />   Cadastro de produtos</button></Link>
             <Link to='/cadastrarcliente'><button><FaUser />   Cadastro de clientes</button></Link>

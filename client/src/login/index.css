@@ -1,5 +1,5 @@
 .container-login {
-    background-color: #0E1015;
+    background-color: #1D0C3D;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -58,5 +58,5 @@
 
 .titulo-login {
     margin-top: 30px;
-    color: #0095FF;
+    color: #ffffff;
 }

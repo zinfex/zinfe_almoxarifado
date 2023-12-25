@@ -70,7 +70,7 @@ function RegistroVenda() {
       <div className="pag">
         <Column />
 
-        <div className="container-register">
+        <div className="container-register-vendas">
           <h1>Cadastro de vendas</h1>
 
           <input
@@ -101,6 +101,7 @@ function RegistroVenda() {
           <div className="tables">
             <div>
               <h2>Clientes:</h2>
+              <Link to='cadastrarproduto'><span className="linkCadastro">Cadastrar um novo cliente</span></Link>
               <input
                 type="search"
                 placeholder="Pesquisar nome"
@@ -122,10 +123,12 @@ function RegistroVenda() {
                     </p>
                   );
                 })}
+
             </div>
 
             <div>
               <h2>Produtos:</h2>
+              <Link to='cadastrarproduto'><span className="linkCadastro">Cadastrar um novo produto</span></Link>
               <input
                 type="search"
                 className="searchBox"
@@ -150,6 +153,7 @@ function RegistroVenda() {
                     );
                   }
                 })}
+
             </div>
           </div>
         </div>

@@ -11,8 +11,7 @@ function Configuracoes() {
 
     if (token) {
       const decodedToken = jwtDecode(token);
-      const userInfo = [decodedToken.email, decodedToken.id];
-      setUser(userInfo);
+      setUser([decodedToken.email, decodedToken.id]);
     }
   }, []);
 
