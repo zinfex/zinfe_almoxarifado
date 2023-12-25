@@ -1,7 +1,6 @@
 import Axios from "axios";
 import "./index.css";
 import { useState } from "react";
-import { z } from "zod"
 
 function Login() {
   const [values, setValues] = useState();
@@ -48,7 +47,6 @@ function Login() {
       
       setFormData('')
     } catch (e) {
-      alert("Este email já está cadastrado")
       console.log(e);
     }
 

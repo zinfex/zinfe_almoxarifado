@@ -22,13 +22,13 @@ class VendasModel {
 
   async low(id) {
     try {
-      const produto = await knex
+      const produtos = await knex
         .select("amount")
         .from("produto")
         .where("id", id);
-      return await knex("produto")
+      return await knex("produtos")
         .where("id", id)
-        .update("amount", produto[0].amount - 1);
+        .update("amount", produtos[0].amount - 1);
     } catch (error) {
       console.log(error);
       throw new Error("Não foi possível diminuir a quantiade");

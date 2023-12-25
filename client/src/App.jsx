@@ -6,6 +6,8 @@ import RegisterProduct from './registros/produtos/RegistroProduto';
 import RegisterClient from './registros/clientes/RegistroCliente';
 import Caixa from './caixa/Caixa';
 import RegistroVenda from './registros/venda/RegistroVenda';
+import Suporte from './suporte/Suporte';
+import Configuracoes from './configuracoes/Configuracoes';
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
         <Route path='/login' element={<Login />}/>
         <Route path='/caixa' element={<Caixa />}/>
         <Route path='/venda' element={<RegistroVenda />}/>
+        <Route path='/suporte' element={<Suporte />} />
+        <Route path='/configuracoes' element={<Configuracoes />}/>
       </Routes>
     </BrowserRouter>
   )

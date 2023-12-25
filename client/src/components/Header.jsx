@@ -5,10 +5,10 @@ import { FaUser } from "react-icons/fa";
 function Header() {
     return (
         <header>
-            <h1>ZINFE ALMOXARIFADO</h1>
+            <h1>ZINFE's ALMOXARIFADO</h1>
     
             <div className="header-forms">
-                <Link className="header-button">
+                <Link to='/suporte' className="header-button">
                     <MdLiveHelp /> Suporte
                 </Link>
     

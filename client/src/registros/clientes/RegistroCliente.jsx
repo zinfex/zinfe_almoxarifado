@@ -1,13 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { IoArrowBackCircleOutline } from "react-icons/io5";
 import "../registro.css";
 import Api from "../../config/Api";
 import Header from "../../components/header";
 import Column from "../../components/Column";
 
 function RegisterClient() {
-  const [formData, setFormData] = useState();
   const [values, setValues] = useState();
 
   const handleChangeValues = (value) => {
@@ -47,7 +45,6 @@ function RegisterClient() {
           <input
             type="text"
             name="nameclient"
-            value={formData}
             placeholder="Nome completo do cliente"
             className="register"
             onChange={handleChangeValues}
@@ -55,7 +52,6 @@ function RegisterClient() {
           <input
             type="email"
             name="email"
-            value={formData}
             placeholder="Email do cliente"
             className="register"
             onChange={handleChangeValues}
@@ -64,7 +60,6 @@ function RegisterClient() {
           <input
             type="number"
             name="cpf"
-            value={formData}
             placeholder="CPF do cliente"
             className="register"
             onChange={handleChangeValues}
@@ -73,7 +68,6 @@ function RegisterClient() {
           <input
             type="number"
             name="cep"
-            value={formData}
             placeholder="CEP do cliente"
             className="register"
             onChange={handleChangeValues}

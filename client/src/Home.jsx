@@ -5,9 +5,9 @@ import Column from "./components/Column";
 
 function Home() {
     const token = localStorage.getItem('token')
-    if(token == null) {
+    if(token == (null || undefined)) {
         location.href= '/login'
-    }  
+    } 
     
     return(
         <>

@@ -6,7 +6,6 @@ function Clientes() {
 
   useEffect(() => {
     Api.get("clientes").then((response) => {
-      console.log(response);
       setListClients(response.data);
     });
   }, []);
