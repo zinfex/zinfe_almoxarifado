@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../registro.css";
 import Api from "../../config/Api";
-import Header from "../../components/header";
 import Column from "../../components/Column";
 
 function RegisterProduct() {
@@ -34,7 +33,6 @@ function RegisterProduct() {
 
   return (
     <div>
-      <Header />
 
       <div className="pag">
         <Column />

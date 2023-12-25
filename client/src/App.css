@@ -12,13 +12,8 @@ body {
     color: rgb(207, 206, 206);
 }
 
-header h1  {
-    color: #ffffff;
-}
-
 a {
     text-decoration: none;
-    
 }
 
 .column button{
@@ -50,7 +45,18 @@ a {
     padding: 15px;
     background-color: #1D0C3D;
     width: fit-content;
-    min-height: 90vh;
+    min-height: 96vh;
+}
+
+.column .image {
+    width: 100%;
+    text-align: center;
+}
+
+.column .image img {
+    width: 100px;
+    filter: invert(1);
+    margin: 15px;
 }
 
 .container {
@@ -58,18 +64,7 @@ a {
     height: fit-content;
 }
 
-header {
-    width: 100;
-    background-color: #13151B;
-    color: white;
-    padding: 15px;
-    display: flex;
-    border: 1px solid rgba(231, 231, 231, 0.092);
-    justify-content: center;
-    background-color: #1D0C3D;
-}
-
-.header-forms {
+.column-forms {
     width: 100px;
     display: flex;
     justify-content: space-around;
@@ -77,19 +72,20 @@ header {
     right: 30px;
 }
 
-.header-button {
+.column-button {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-inline-end: 30px;
     text-decoration: none;
     transition: 150ms ease-in-out;
-    color: #ffffff;
+    color: #1D0C3D;
 }
 
 
-.header-button:hover {
-    color: rgb(189, 187, 187);
+.column-button:hover {
+    color: rgba(29, 12, 61, 0.6);
+    border: 1px 4px black;
 }
 
 

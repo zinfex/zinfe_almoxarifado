@@ -1,9 +1,7 @@
 import "../registro.css";
-import { Link } from "react-router-dom";
-import { IoArrowBackCircleOutline } from "react-icons/io5";
+import { Link } from "react-router-dom"
 import { useEffect, useState } from "react";
 import Api from "../../config/Api";
-import Header from "../../components/header";
 import Column from "../../components/Column";
 
 function RegistroVenda() {
@@ -65,7 +63,6 @@ function RegistroVenda() {
 
   return (
     <div>
-      <Header />
 
       <div className="pag">
         <Column />

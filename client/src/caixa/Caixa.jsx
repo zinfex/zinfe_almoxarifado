@@ -1,9 +1,7 @@
 import "./caixa.css";
 import { Link } from "react-router-dom";
-import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { useState, useEffect } from "react";
 import Api from "../config/Api";
-import Header from "../components/header";
 import Column from "../components/Column";
 
 function Caixa() {
@@ -35,8 +33,6 @@ function Caixa() {
 
   return (
     <div>
-      <Header />
-
       <div className="pag">
         <Column />
 

@@ -1,6 +1,5 @@
 import Produtos from "./tabelas/produtos"
 import Clientes from "./tabelas/clientes";
-import Header from "./components/header";
 import Column from "./components/Column";
 
 function Home() {
@@ -11,7 +10,6 @@ function Home() {
     
     return(
         <>
-            < Header />
             <div className="container">
                 <Column />
 
