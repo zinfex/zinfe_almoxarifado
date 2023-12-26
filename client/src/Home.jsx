@@ -1,25 +1,25 @@
-import Produtos from "./tabelas/produtos"
+import Produtos from "./tabelas/produtos";
 import Clientes from "./tabelas/clientes";
 import Column from "./components/Column";
 
 function Home() {
-    const token = localStorage.getItem('token')
-    if(token == (null || undefined)) {
-        location.href= '/login'
-    } 
-    
-    return(
-        <>
-            <div className="container">
-                <Column />
+  const token = localStorage.getItem("token");
+  if (token == (null || undefined)) {
+    location.href = "/login";
+  }
 
-                <div className="tabelas">
-                    <Produtos />
-                    <Clientes />
-                </div>
-            </div>
-        </>
-    )
+  return (
+    <>
+      <div className="container">
+        <Column />
+
+        <div className="tabelas">
+          <Produtos />
+          <Clientes />
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default Home;

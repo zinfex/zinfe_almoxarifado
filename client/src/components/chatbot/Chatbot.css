@@ -1,0 +1,42 @@
+.chatbot {
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    color: white;
+    width: 280px;
+    height: 350px;
+    background-color: rgb(73, 20, 122);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.botsay {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.botsay img {
+    width: 40px;
+    padding: 10px;
+}
+
+li {
+    display: flex;
+}
+
+.say {
+    background-color: white;
+    color: rgb(28, 6, 63);
+    padding: 14px;
+    width: fit-content;
+    height: fit-content;
+    list-style: none;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 30px;
+}
+
+.say-1 {
+    display: none;
+}
