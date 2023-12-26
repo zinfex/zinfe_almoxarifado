@@ -7,11 +7,12 @@ function Configuracoes() {
   const [user, setUser] = useState([]);
 
   useEffect(() => {
-    const token = localStorage.getItem("token");
-
-    if (token) {
+    try {
+      const token = localStorage.getItem("token");
       const decodedToken = jwtDecode(token);
       setUser([decodedToken.email, decodedToken.id]);
+    } catch(e) {
+      console.log(e)
     }
   }, []);
 

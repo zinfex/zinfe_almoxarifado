@@ -1,6 +1,7 @@
 import Axios from "axios";
 import "./index.css";
 import { useState } from "react";
+import validarEmail from "../validations/Email";
 
 function Login() {
   const [values, setValues] = useState();
@@ -21,8 +22,6 @@ function Login() {
         senha: values.senha,
       })
         .then((res) => {
-          console.log(res);
-
           localStorage.setItem("token", res.data.data.token);
 
           alert("Bem vindo");
@@ -36,22 +35,27 @@ function Login() {
   }
 
   function SignUp() {
-    try {
-      Axios.post("http://localhost:3001/usuarios", {
-        email: values.email,
-        senha: values.senha,
-      }).then((res) => {
-        console.log(res);
-        alert("Conta cadastrada");
-      });
-      
-      setFormData('')
-    } catch (e) {
-      console.log(e);
+    if (validarEmail(values.email) == null) {
+      try {
+        Axios.post("http://localhost:3001/usuarios", {
+          email: values.email,
+          senha: values.senha,
+        }).then((res) => {
+          console.log(res);
+          alert("Conta cadastrada");
+        });
+        
+        setFormData('')
+      } catch (e) {
+        console.log(e);
+      }
+  
+      console.log(values);
+    } else {
+      alert("Insira um e-mail válido")
     }
-
-    console.log(values);
   }
+
 
   return (
     <div className="container-login">
