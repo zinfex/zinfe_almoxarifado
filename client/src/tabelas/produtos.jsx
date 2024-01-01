@@ -24,7 +24,6 @@ function Produtos() {
   return (  
     <div className="tabela">
       <h2>Estoque:</h2>
-
       {typeof listProducts !== "undefined" &&
         listProducts.map((values) => {
           if (values.amount > 0) {

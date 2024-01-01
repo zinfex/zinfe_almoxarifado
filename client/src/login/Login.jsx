@@ -16,22 +16,28 @@ function Login() {
   };
 
   function SignIn() {
-    try {
-      Axios.post("http://localhost:3001/usuarios/login", {
-        email: values.email,
-        senha: values.senha,
-      })
-        .then((res) => {
-          localStorage.setItem("token", res.data.data.token);
 
-          alert("Bem vindo");
-          location.href = "/";
+    if(validarEmail(values.email) == null) {
+      try {
+        Axios.post("http://localhost:3001/usuarios/login", {
+          email: values.email,
+          senha: values.senha,
         })
-        .catch(console.log);
-    } catch (e) {
-      setFormData('')
-      console.log(e);
+          .then((res) => {
+            localStorage.setItem("token", res.data.data.token);
+  
+            alert("Bem vindo");
+            location.href = "/";
+          })
+          .catch(console.log);
+      } catch (e) {
+        setFormData('')
+        console.log(e);
+      } 
+    } else {
+      alert("Insira um e-mail válido")
     }
+
   }
 
   function SignUp() {

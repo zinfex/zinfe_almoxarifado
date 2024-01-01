@@ -2,12 +2,34 @@
     position: fixed;
     right: 10px;
     bottom: 30px;
-    color: white;
+    color: #ffffff;
     width: 280px;
     height: 350px;
     background-color: rgb(73, 20, 122);
     text-align: center;
     border-radius: 20px;
+    animation: chat-animation 500ms ease-in-out;
+}
+
+.chatbot-voltar {
+    animation: chat-voltar 500ms ease-in-out;
+}
+
+@keyframes chat-animation {
+    from {
+      right: -300px;
+    }
+    to {
+      right: 0;
+    }
+}
+
+@keyframes chat-voltar {
+    from {
+        right: 0;
+    } to {
+        right: -300px;
+    }
 }
 
 .botsay {
