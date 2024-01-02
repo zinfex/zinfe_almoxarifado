@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import "../registro.css";
 import Api from "../../config/Api";
-import Column from "../../components/Column";
 import validarEmail from "../../validations/Email";
+import Column from "../../components/coluna/Column";
 
 function RegisterClient() {
   const [values, setValues] = useState();

@@ -2,7 +2,7 @@ import "./caixa.css";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Api from "../config/Api";
-import Column from "../components/Column";
+import Column from "../components/coluna/Column";
 
 function Caixa() {
   const [listVendas, setListVendas] = useState();

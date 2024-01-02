@@ -1,7 +1,7 @@
 import "./index.css"
-import Column from "../components/Column";
 import { useEffect, useState } from "react";
 import { jwtDecode } from "jwt-decode"; 
+import Column from "../components/coluna/Column";
 
 function Configuracoes() {
   const [user, setUser] = useState([]);

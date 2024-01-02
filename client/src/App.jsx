@@ -20,7 +20,6 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/caixa" element={<Caixa />} />
         <Route path="/venda" element={<RegistroVenda />} />
-        <Route path="/suporte" element={<Chatbot />} />
         <Route path="/configuracoes" element={<Configuracoes />} />
       </Routes>
     </BrowserRouter>

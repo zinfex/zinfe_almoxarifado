@@ -2,7 +2,7 @@ import "../registro.css";
 import { Link } from "react-router-dom"
 import { useEffect, useState } from "react";
 import Api from "../../config/Api";
-import Column from "../../components/Column";
+import Column from "../../components/coluna/Column";
 
 function RegistroVenda() {
   const [listClients, setListClients] = useState();

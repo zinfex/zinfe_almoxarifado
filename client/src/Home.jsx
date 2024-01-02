@@ -1,6 +1,6 @@
 import Produtos from "./tabelas/produtos";
 import Clientes from "./tabelas/clientes";
-import Column from "./components/Column";
+import Column from "./components/coluna/Column";
 
 function Home() {
   const token = localStorage.getItem("token");
@@ -9,16 +9,15 @@ function Home() {
   }
 
   return (
-    <>
-      <div className="container">
-        <Column />
+    <div className="container">
+      <Column />
 
-        <div className="tabelas">
-          <Produtos />
-          <Clientes />
-        </div>
+      <div className="tabelas">
+        <Produtos />
+        <Clientes />
       </div>
-    </>
+
+    </div>
   );
 }
 

@@ -2,6 +2,7 @@ import Axios from "axios";
 import "./index.css";
 import { useState } from "react";
 import validarEmail from "../validations/Email";
+import Chatbot from "../components/chatbot/Chatbot";
 
 function Login() {
   const [values, setValues] = useState();
@@ -97,6 +98,8 @@ function Login() {
           Gerencie seu estoque <br /> da melhor forma
         </h1>
       </div>
+
+      <Chatbot />
     </div>
   );
 }

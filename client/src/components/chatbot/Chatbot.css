@@ -1,18 +1,17 @@
-.chatbot {
+#chatbot {
+    padding: 18px;
+    display: none;
     position: fixed;
     right: 10px;
     bottom: 30px;
     color: #ffffff;
-    width: 280px;
+    width: 250px;
     height: 350px;
-    background-color: rgb(73, 20, 122);
+    background-color: rgb(58, 13, 100);
     text-align: center;
-    border-radius: 20px;
+    border-radius: 30px;
     animation: chat-animation 500ms ease-in-out;
-}
-
-.chatbot-voltar {
-    animation: chat-voltar 500ms ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.678) 1px 2px 5px 2px;
 }
 
 @keyframes chat-animation {
@@ -24,18 +23,10 @@
     }
 }
 
-@keyframes chat-voltar {
-    from {
-        right: 0;
-    } to {
-        right: -300px;
-    }
-}
-
 .botsay {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .botsay img {
@@ -61,4 +52,33 @@ li {
 
 .say-1 {
     display: none;
+}
+
+.chat-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.chat-buttons button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    transition: 100ms ease-in-out;
+
+}
+
+.chat-buttons button:hover {
+    background-color: rgba(250, 235, 215, 0.667);
+}
+
+a.fecharChat {
+    position: absolute;
+    right: 30px;
+    font-size: 40px;
+    cursor: pointer;
 }
